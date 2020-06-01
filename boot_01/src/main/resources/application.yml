@@ -1,0 +1,29 @@
+server:
+  port: 9999 #这里是注释
+spring:
+  profiles: uat
+book:
+  another: yuqiaodi
+---
+server:
+  port: 9998 #这里是注释
+spring:
+  profiles: sit
+book:
+  another: weiai
+#
+#
+#another: yuqiaodi
+#
+#org:
+#  yqd:
+#    boot:
+#      another:
+#        name: yuqiaodi
+#        number: 1
+#      book: springboot
+#      date[0]: 2015
+#      date[1]: 2016
+#      date[2]: 2017
+#      date[3]: 2018
+#      date[4]: 2019
