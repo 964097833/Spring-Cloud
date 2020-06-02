@@ -1,0 +1,40 @@
+#spring:
+#  profiles:
+#    active: dev
+#  application:
+#    name: cloud01
+#  cloud:
+#    consul:
+#      discovery:
+#        hostname: 192.168.170.3
+#        port: 8500
+#      config:
+#        fail-fast: true
+#        format: YAML
+#        prefix: config
+#        default-context: application
+#        profile-separator: ','
+#        data-key: data
+spring:
+  cloud:
+    consul:
+      host: 192.168.170.3
+      port: 8500
+      discovery:
+        health-check-path: /health
+        health-check-interval: 15s
+        instance-id: cloud01-id
+        hostname: 192.168.0.106
+      config:
+        fail-fast: true
+        format: YAML
+        prefix: config
+        default-context: application
+        profile-separator: ','
+        data-key: data
+  profiles:
+    active: dev
+  application:
+    name: cloud01
+#server:
+#  port: 50123
