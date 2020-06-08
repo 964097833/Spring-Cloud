@@ -1,25 +1,46 @@
+#spring:
+#  cloud:
+#    consul:
+#      host: 192.168.170.3
+#      port: 8500
+#      discovery:
+#        health-check-path: /health
+#        health-check-interval: 15s
+#        hostname: 192.168.0.106
+#      config:
+#        fail-fast: true
+#        format: YAML
+#        prefix: config
+#        default-context: application
+#        profile-separator: ','
+#        data-key: data
+#  profiles:
+#    active: dev
+#  application:
+#    name: cloud-admin
+#server:
+#  port: 8084
+#feign:
+#  hystrix:
+#    enabled: true
 spring:
   cloud:
     consul:
       host: 192.168.170.3
       port: 8500
       discovery:
-        health-check-path: /health
         health-check-interval: 15s
+        health-check-path: /health
         hostname: 192.168.0.106
-      config:
-        fail-fast: true
-        format: YAML
-        prefix: config
-        default-context: application
-        profile-separator: ','
-        data-key: data
-  profiles:
-    active: dev
   application:
     name: cloud-admin
+feign:
+  client:
+    config:
+      cloud-user-8083:
+        connectionTime: 1000
+        readTimeout: 1000
+        requestInterceptors:
+          - cn.yqd.interceptor.AdminInterceptor
 server:
   port: 8084
-feign:
-  hystrix:
-    enabled: true

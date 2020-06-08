@@ -5,6 +5,16 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-common-jar/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-admin-8084/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-admin-8085/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-book-8086/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-book-8087/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-book-8088/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-book-8090/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-book-8089/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-dashboard-8089/pom.xml" />
+        <option value="$PROJECT_DIR$/../cloud-dashboard-8090/pom.xml" />
       </list>
     </option>
   </component>

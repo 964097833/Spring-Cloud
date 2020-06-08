@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    consul:
+      host: 192.168.170.3
+      port: 8500
+      discovery:
+        health-check-interval: 15s
+        health-check-path: /health
+        hostname: 192.168.0.106
+  application:
+    name: cloud-admin
+feign:
+  client:
+    config:
+      cloud-user-8083:
+        connectionTime: 1000
+        readTimeout: 1000
+        requestInterceptors:
+          - cn.yqd.interceptor.AdminInterceptor
+server:
+  port: 8085

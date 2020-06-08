@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    consul:
+      host: 192.168.170.3
+      port: 8500
+      discovery:
+        health-check-interval: 15s
+        health-check-path: /health
+        hostname: 192.168.0.106
+  application:
+    name: cloud-book
+server:
+  port: 8090
+#logging:
+#  level:
+#    cn.yqd.service.IndexService: none
+feign:
+  hystrix:
+    enabled: true

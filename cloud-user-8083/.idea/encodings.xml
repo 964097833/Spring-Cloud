@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../cloud-admin-8084/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-admin-8084/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-admin-8085/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-book-8086/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-book-8087/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-book-8088/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-book-8089/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../cloud-dashboard-8090/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
   </component>
 </project>

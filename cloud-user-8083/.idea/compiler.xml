@@ -6,12 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-admin-8084" />
+        <module name="cloud-book-8089" />
+        <module name="cloud-book-8088" />
+        <module name="cloud-book-8087" />
+        <module name="cloud-book-8086" />
+        <module name="cloud-dashboard-8090" />
+        <module name="cloud-common-jar" />
+        <module name="cloud-admin-8085" />
         <module name="cloud-user-8083" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-admin-8084" options="-parameters" />
+      <module name="cloud-admin-8085" options="-parameters" />
+      <module name="cloud-book-8086" options="-parameters" />
+      <module name="cloud-book-8087" options="-parameters" />
+      <module name="cloud-book-8088" options="-parameters" />
+      <module name="cloud-book-8089" options="-parameters" />
+      <module name="cloud-dashboard-8090" options="-parameters" />
       <module name="cloud-user-8083" options="-parameters" />
     </option>
   </component>
