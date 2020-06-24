@@ -1,0 +1,11 @@
+package cn.yqd;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ApplicationMain1 {
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationMain1.class,args);
+    }
+}
